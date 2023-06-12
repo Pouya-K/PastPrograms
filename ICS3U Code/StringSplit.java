@@ -8,12 +8,16 @@ public class StringSplit {
         userString = keyboard.nextLine();
     }
     public static void split(String splitter){
-        for(int i = 0; i<splitter.length(); i++){
-            if(splitter.charAt(i)==' '){
+        /*
+        Explanation: In short, this program will go through every character in a string.
+                     If it finds a space, it will enter a new line.
+         */
+        for(int i = 0; i<splitter.length(); i++){ //Looping through every character of a string
+            if(splitter.charAt(i)==' '){ //Checking if the character is a space
                 System.out.println();
             }
             else{
-                System.out.print(splitter.charAt(i));
+                System.out.print(splitter.charAt(i)); //Printing each character as long as it is not a space
             }
         }
     }
